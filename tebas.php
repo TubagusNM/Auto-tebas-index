@@ -69,18 +69,18 @@ if(htmlspecialchars(isset($_POST['submit']))){
             }
         elseif(htmlspecialchars($_POST['content'] ===  '')){
             echo "<script>
-              Swal.fire(
+               Swal.fire(
                     'Perhatian!',
                     'harap isi terlebih dahulu.',
                     'warning'
             )
           </script>";
         }else{
-			echo "<script>
-                Swal.fire(
-                    'Gagal!',
-                    'tidak dapat mengedit htaccess.',
-                    'error'
+	   echo "<script>
+              Swal.fire(
+                   'Gagal!',
+                   'tidak dapat mengedit htaccess.',
+                   'error'
             )
             </script>";
 	}
